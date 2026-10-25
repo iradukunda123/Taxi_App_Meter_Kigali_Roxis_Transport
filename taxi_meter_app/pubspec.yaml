@@ -1,0 +1,36 @@
+name: taxi_meter_app
+description: "A live GPS taxi meter for drivers operating in Rwanda."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Free, open-source (Leaflet-style) map widget — renders OpenStreetMap
+  # tiles, the driver's route polyline, and the position marker. No API key.
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Handles location permission requests and the live GPS position stream.
+  geolocator: ^13.0.1
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Driver profile photo. Replace assets/driver_profile.png with the driver's
+  # real photo — if the file is missing, the app falls back to a generated
+  # taxi-icon avatar automatically, so the app still runs without it.
+  assets:
+    - assets/driver_profile.png
