@@ -1053,14 +1053,14 @@ class _DriverDrawer extends StatelessWidget {
           Container(
             padding: const EdgeInsets.fromLTRB(20, 60, 20, 20),
             color: AppColors.greenDark,
-            child: Row(
+            child: const Row(
               children: [
-                const _DriverAvatar(radius: 32),
-                const SizedBox(width: 14),
+                _DriverAvatar(radius: 32),
+                SizedBox(width: 14),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       Text(
                         'Robert',
                         style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
